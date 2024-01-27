@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hedef Sayfa</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // localStorage'dan referans sayfa bilgisini al
+            var referrer = localStorage.getItem("referrer");
+
+            // Referans sayfa bilgisini kontrol et
+            if (referrer) {
+                // Ziyaretçiyi yönlendiren sayfa bilgisini yazdır
+                document.getElementById("referrer-info").innerText = "" + referrer;
+            } else {
+                // Referans sayfa bilgisi yoksa, bir mesaj yazdır
+                document.getElementById("referrer-info").innerText = "";
+            }
+        });
+    </script>
+</head>
+<body>
+  <div style="color:red"> <center> 
+    <p id="referrer-info"></p>
+    <h1><span class="marker"><strong>DOMAİN ADRESİMİZ SATILIKTIR! <br>THİS DOMAIN ADDRESS IS FOR SALE!</strong></span></h1>
+
+<h1><span class="marker"><strong>+90 505 397 77 07</strong></span></h1>
+
+<h1><span class="marker"><strong>veysuf@hotmail.com</strong></span></h1>
+    <!-- Diğer sayfa içeriği --> 
+    
+  </center></div>
+   
+</body>
+</html>

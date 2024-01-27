@@ -12,10 +12,10 @@
             // Referans sayfa bilgisini kontrol et
             if (referrer) {
                 // Ziyaretçiyi yönlendiren sayfa bilgisini yazdır
-                document.getElementById("referrer-info").innerText = "" + referrer;
+                document.getElementById("referrer-info").innerText = referrer;
             } else {
                 // Referans sayfa bilgisi yoksa, bir mesaj yazdır
-                document.getElementById("referrer-info").innerText = "";
+                document.getElementById("referrer-info").innerText = "YONLENDIRILEN DOMAIN SATILIKTIR!";
             }
         });
     </script>
